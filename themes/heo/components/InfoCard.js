@@ -45,7 +45,7 @@ export function InfoCard(props) {
                         <Link href='/about'><GlobeAlt className={'w-6 h-6'} /></Link>
                     </div> */}
                     <div className='bg-indigo-400 p-2 rounded-full w-10 items-center flex justify-center transition-colors duration-200 dark:bg-yellow-500 dark:hover:bg-black hover:bg-white'>
-                        {siteConfig('HEO_INFO_CARD_URL', null, CONFIG) && <Link href={siteConfig('HEO_INFO_CARD_URL', null, CONFIG)}>
+                        {siteConfig('HEO_INFO_CARD_URL', null, CONFIG) && <Link href={`mailto:${siteConfig('CONTACT_EMAIL')}`}>
                             <i className='fas fa-envelope text-xl' />
                         </Link>
                         }
